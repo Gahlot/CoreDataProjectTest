@@ -15,6 +15,10 @@
 		466AE0AC2789F3A40071A894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0AB2789F3A40071A894 /* Assets.xcassets */; };
 		466AE0AF2789F3A40071A894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0AD2789F3A40071A894 /* LaunchScreen.storyboard */; };
 		466AE0B82789F79B0071A894 /* PersistanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0B72789F79B0071A894 /* PersistanceStorage.swift */; };
+		466AE0C62789FEA30071A894 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C42789FEA30071A894 /* Student+CoreDataClass.swift */; };
+		466AE0C72789FEA30071A894 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C52789FEA30071A894 /* Student+CoreDataProperties.swift */; };
+		466AE0CA2789FECE0071A894 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C82789FECE0071A894 /* Lesson+CoreDataClass.swift */; };
+		466AE0CB2789FECE0071A894 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C92789FECE0071A894 /* Lesson+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		466AE0AE2789F3A40071A894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466AE0B02789F3A40071A894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466AE0B72789F79B0071A894 /* PersistanceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceStorage.swift; sourceTree = "<group>"; };
+		466AE0C42789FEA30071A894 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		466AE0C52789FEA30071A894 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		466AE0C82789FECE0071A894 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		466AE0C92789FECE0071A894 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +68,12 @@
 		466AE09E2789F3A20071A894 /* CoreDataProjectTest */ = {
 			isa = PBXGroup;
 			children = (
+				466AE0B92789FC9B0071A894 /* DataModels */,
+				466AE0BF2789FD860071A894 /* Controllers */,
+				466AE0BD2789FD120071A894 /* Storyboards */,
 				466AE0B62789F76A0071A894 /* CoreDataStack */,
-				466AE09F2789F3A20071A894 /* AppDelegate.swift */,
-				466AE0A12789F3A20071A894 /* SceneDelegate.swift */,
-				466AE0A32789F3A20071A894 /* ViewController.swift */,
-				466AE0A52789F3A20071A894 /* Main.storyboard */,
-				466AE0AB2789F3A40071A894 /* Assets.xcassets */,
-				466AE0AD2789F3A40071A894 /* LaunchScreen.storyboard */,
+				466AE0BE2789FD3F0071A894 /* APPDelegates */,
+				466AE0BC2789FCFD0071A894 /* Resources */,
 				466AE0B02789F3A40071A894 /* Info.plist */,
 			);
 			path = CoreDataProjectTest;
@@ -79,6 +86,67 @@
 				466AE0B72789F79B0071A894 /* PersistanceStorage.swift */,
 			);
 			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		466AE0B92789FC9B0071A894 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0BB2789FCD20071A894 /* Lesson */,
+				466AE0BA2789FCC40071A894 /* Student */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		466AE0BA2789FCC40071A894 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0C42789FEA30071A894 /* Student+CoreDataClass.swift */,
+				466AE0C52789FEA30071A894 /* Student+CoreDataProperties.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		466AE0BB2789FCD20071A894 /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0C82789FECE0071A894 /* Lesson+CoreDataClass.swift */,
+				466AE0C92789FECE0071A894 /* Lesson+CoreDataProperties.swift */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
+		466AE0BC2789FCFD0071A894 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0AB2789F3A40071A894 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		466AE0BD2789FD120071A894 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0AD2789F3A40071A894 /* LaunchScreen.storyboard */,
+				466AE0A52789F3A20071A894 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		466AE0BE2789FD3F0071A894 /* APPDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				466AE09F2789F3A20071A894 /* AppDelegate.swift */,
+				466AE0A12789F3A20071A894 /* SceneDelegate.swift */,
+			);
+			path = APPDelegates;
+			sourceTree = "<group>";
+		};
+		466AE0BF2789FD860071A894 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0A32789F3A20071A894 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +221,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				466AE0B82789F79B0071A894 /* PersistanceStorage.swift in Sources */,
+				466AE0C62789FEA30071A894 /* Student+CoreDataClass.swift in Sources */,
 				466AE0AA2789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld in Sources */,
 				466AE0A42789F3A20071A894 /* ViewController.swift in Sources */,
 				466AE0A02789F3A20071A894 /* AppDelegate.swift in Sources */,
+				466AE0CB2789FECE0071A894 /* Lesson+CoreDataProperties.swift in Sources */,
+				466AE0CA2789FECE0071A894 /* Lesson+CoreDataClass.swift in Sources */,
 				466AE0A22789F3A20071A894 /* SceneDelegate.swift in Sources */,
+				466AE0C72789FEA30071A894 /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
