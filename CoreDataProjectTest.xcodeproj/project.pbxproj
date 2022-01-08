@@ -14,6 +14,7 @@
 		466AE0AA2789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0A82789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld */; };
 		466AE0AC2789F3A40071A894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0AB2789F3A40071A894 /* Assets.xcassets */; };
 		466AE0AF2789F3A40071A894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0AD2789F3A40071A894 /* LaunchScreen.storyboard */; };
+		466AE0B82789F79B0071A894 /* PersistanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0B72789F79B0071A894 /* PersistanceStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		466AE0AB2789F3A40071A894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466AE0AE2789F3A40071A894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466AE0B02789F3A40071A894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466AE0B72789F79B0071A894 /* PersistanceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		466AE09E2789F3A20071A894 /* CoreDataProjectTest */ = {
 			isa = PBXGroup;
 			children = (
+				466AE0B62789F76A0071A894 /* CoreDataStack */,
 				466AE09F2789F3A20071A894 /* AppDelegate.swift */,
 				466AE0A12789F3A20071A894 /* SceneDelegate.swift */,
 				466AE0A32789F3A20071A894 /* ViewController.swift */,
@@ -65,9 +68,17 @@
 				466AE0AB2789F3A40071A894 /* Assets.xcassets */,
 				466AE0AD2789F3A40071A894 /* LaunchScreen.storyboard */,
 				466AE0B02789F3A40071A894 /* Info.plist */,
-				466AE0A82789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld */,
 			);
 			path = CoreDataProjectTest;
+			sourceTree = "<group>";
+		};
+		466AE0B62789F76A0071A894 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				466AE0A82789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld */,
+				466AE0B72789F79B0071A894 /* PersistanceStorage.swift */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466AE0B82789F79B0071A894 /* PersistanceStorage.swift in Sources */,
 				466AE0AA2789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld in Sources */,
 				466AE0A42789F3A20071A894 /* ViewController.swift in Sources */,
 				466AE0A02789F3A20071A894 /* AppDelegate.swift in Sources */,
