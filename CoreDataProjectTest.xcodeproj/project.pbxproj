@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		466AE0A02789F3A20071A894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE09F2789F3A20071A894 /* AppDelegate.swift */; };
 		466AE0A22789F3A20071A894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0A12789F3A20071A894 /* SceneDelegate.swift */; };
-		466AE0A42789F3A20071A894 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0A32789F3A20071A894 /* ViewController.swift */; };
 		466AE0A72789F3A20071A894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0A52789F3A20071A894 /* Main.storyboard */; };
 		466AE0AA2789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0A82789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld */; };
 		466AE0AC2789F3A40071A894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466AE0AB2789F3A40071A894 /* Assets.xcassets */; };
@@ -19,13 +18,13 @@
 		466AE0C72789FEA30071A894 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C52789FEA30071A894 /* Student+CoreDataProperties.swift */; };
 		466AE0CA2789FECE0071A894 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C82789FECE0071A894 /* Lesson+CoreDataClass.swift */; };
 		466AE0CB2789FECE0071A894 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0C92789FECE0071A894 /* Lesson+CoreDataProperties.swift */; };
+		466AE0CD278A029A0071A894 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AE0CC278A029A0071A894 /* LessonTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		466AE09C2789F3A20071A894 /* CoreDataProjectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProjectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466AE09F2789F3A20071A894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		466AE0A12789F3A20071A894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		466AE0A32789F3A20071A894 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		466AE0A62789F3A20071A894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466AE0A92789F3A20071A894 /* CoreDataProjectTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProjectTest.xcdatamodel; sourceTree = "<group>"; };
 		466AE0AB2789F3A40071A894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		466AE0C52789FEA30071A894 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		466AE0C82789FECE0071A894 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
 		466AE0C92789FECE0071A894 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		466AE0CC278A029A0071A894 /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,7 @@
 		466AE0BF2789FD860071A894 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				466AE0A32789F3A20071A894 /* ViewController.swift */,
+				466AE0CC278A029A0071A894 /* LessonTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,8 +222,8 @@
 			files = (
 				466AE0B82789F79B0071A894 /* PersistanceStorage.swift in Sources */,
 				466AE0C62789FEA30071A894 /* Student+CoreDataClass.swift in Sources */,
+				466AE0CD278A029A0071A894 /* LessonTableViewController.swift in Sources */,
 				466AE0AA2789F3A20071A894 /* CoreDataProjectTest.xcdatamodeld in Sources */,
-				466AE0A42789F3A20071A894 /* ViewController.swift in Sources */,
 				466AE0A02789F3A20071A894 /* AppDelegate.swift in Sources */,
 				466AE0CB2789FECE0071A894 /* Lesson+CoreDataProperties.swift in Sources */,
 				466AE0CA2789FECE0071A894 /* Lesson+CoreDataClass.swift in Sources */,
